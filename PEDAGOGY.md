@@ -1,9 +1,9 @@
 # PEDAGOGY.md — ICT in Primary Education
 
 - **Academic year:** 2026–2027
-- **Version:** 1.0
+- **Version:** 1.2
 - **Last updated:** 2026-11-24
-- **Status:** Initial repository baseline approved by the course teacher; focused teaching-team and institutional review actions remain open.
+- **Status:** Core approved by the course teacher, updated with the selected documentation ecosystem, differentiated P/TP assessment and activity design decisions; focused teaching-team and institutional review actions remain open.
 - **Scope:** English-medium group of the Bachelor's Degree in Primary Education (Trilingual), Faculty of Education — Bilbao, EHU.
 - **Reference standard:** [PEDAGOGY.md 1.0](https://github.com/arceander/PEDAGOGY.md/blob/547f9322ccb4e6bd6fb22e675ac4be0691b0dc3a/PEDAGOGY.md), revision `547f9322ccb4e6bd6fb22e675ac4be0691b0dc3a` (including unreleased updates on selective modular adoption).
 
@@ -11,7 +11,7 @@
 
 This file is the central pedagogical specification of *Information and Communication Technology in Primary Education*. It defines the course identity, pedagogical principles, instructional logic and relationships between competences, learning outcomes, content, activities, assessment and feedback. It guides the teaching team, the development of teaching materials and the configuration of AI-supported educational systems.
 
-The course design is maintained here across editions. The official course guide and applicable regulations govern institutional requirements; this file does not amend them. The teaching team uses the 2025–2026 assessment design as its planning model for 2026–2027, as decided by the responsible teacher. The discrepancy with the published guide and the need for institutional alignment are recorded in sections 9 and 18. The Spanish-language guide's DigCompEdu-based content structure is adopted as the curricular reference for the course, with a request to align the other language versions in the following edition.
+The course design is maintained here across editions. The official course guide and applicable regulations govern institutional requirements; this file does not amend them. The teaching team uses the 2025–2026 assessment distribution as its planning model for 2026–2027, with the updated P and TP scoring conventions in section 9.4, as decided by the responsible teacher. The discrepancy with the published guide and the need for institutional alignment are recorded in sections 9 and 18. The Spanish-language guide's DigCompEdu-based content structure is adopted as the curricular reference for the course, with a request to align the other language versions in the following edition.
 
 Repository documentation and student-facing materials are written in English. Internal discussions with the teacher may take place in Spanish. Outstanding decisions are concentrated in section 18 rather than distributed as status labels throughout the file.
 
@@ -151,7 +151,7 @@ Students develop a professional identity that goes beyond personal technology us
 
 ### 6.1. Session types
 
-**Theoretical sessions (one hour per teaching week).** These introduce concepts, frameworks and problems that provide a shared professional language. They typically combine a short connection to prior learning, conceptual exposition, a theory-related questionnaire (Q) and/or a brief theoretical-practical exercise (TP). Q is completed during theoretical sessions and checks understanding of the theory. TP applies the concepts to a focused task. The specific combination and time allocation can vary with the session's aim.
+**Theoretical sessions (one hour per teaching week).** These introduce concepts, frameworks and problems that provide a shared professional language. They typically combine a short connection to prior learning, conceptual exposition, a theory-related questionnaire (Q) and/or a brief theoretical-practical exercise (TP). Q is an occasional questionnaire at the end of a theoretical session, intended to foster attention and attendance and check understanding of the theory. Wooclap or eGela questionnaires may be used; weekly implementation will depend on feasibility. TP applies the concepts to a focused task. The specific combination and time allocation can vary with the session's aim.
 
 **Practical sessions (three hours per teaching week).** These involve tool exploration, problem-solving, creation, analysis and instructional design. A typical session introduces its purpose, provides a brief conceptual or technical explanation, and allows guided work with a break when appropriate. Practical exercises (P) help students gain autonomy and prepare for the projects. Teachers connect the experience to educational decisions, including whether a technology is worth using in primary education.
 
@@ -251,11 +251,11 @@ Teaching weeks are referred to locally as `S1`, `S2`, `S3`, etc. `S1` correspond
 
 The weekly naming convention uses `<type>_S<week>`: for example, `P_S5` is the practical exercise for course week 5, and `Q_S9` is the questionnaire for course week 9. Similarly, `TP_S5` is the theoretical-practical exercise for week 5. A suffix may be introduced if several exercises of the same type occur in one week, only where needed. Project identifiers remain `Prj1`, `Prj2`, `Prj3`. Theory and resource identifiers may use the same week convention when helpful; reusable materials need not be permanently tied to a week.
 
-`PS` is a historical activity code and may appear in previous materials. `P` is used for current practical exercise identifiers and assessment references. Historical materials should be checked before reuse rather than silently renamed. Week-based identifiers refer to the course edition, not stable conceptual identities.
+`PS` is a historical activity code and may appear in previous materials. `P` is used for current practical exercise identifiers and assessment references. Historical materials should be checked before reuse rather than silently renamed. Week-based identifiers refer to the course edition, not stable conceptual identities. Reusable activities have a permanent internal identifier (`ACT-001`, `ACT-002`, etc.) allocated when registered. Student-facing codes such as `P_S2` remain the normal way to refer to activities in class. The edition teaching route maps the weekly code to the permanent activity identity and revision; moving an activity to a different week does not change its permanent ID.
 
 ### 8.2. Integrative projects
 
-One project per block remains the planning model. The three project designs below are retained for the current edition but must be reviewed with Javier Portillo, as their scope or format may change. Project-specific briefs establish the final tools, grouping, outputs and criteria.
+One project per block remains the planning model. The three project designs below are retained for the current edition but must be reviewed with Javier Portillo, as their scope or format may change. Project-specific briefs establish the final tools, grouping, outputs and criteria. Each project has a dedicated workspace under `projects/`, with its brief, guides, resource links and, when developed, its assistant specification and tests. The authoritative rubric is linked rather than duplicated.
 
 | Project | Purpose | Reference task and output | Main LO links |
 |---|---|---|---|
@@ -276,6 +276,8 @@ Activities should specify, in proportion to their complexity:
 - Conditions of AI use.
 - Submission deadline and format.
 
+Each reusable TP or P has two complementary layers: an internal activity specification for teachers and AI, and a student-facing brief for Word and eGela. The internal specification records stable identity, revision, block, activity type, pedagogical rationale, relevant content and AC/TPC/DigCompEdu mappings, provisional LO links where relevant, observable evidence and criteria, and optional links to related activities or projects, scaffolding and teacher notes. The student-facing brief contains only the information needed to understand and complete the activity, including learning objectives, visible curricular links, instructions, expected output, success criteria, AI-use conditions and submission requirements as applicable. Edition-specific dates and weekly codes are maintained in the annual route and supplied to the published brief. Both layers share the same student-facing content; internal notes must not introduce undisclosed assessment criteria. A common modular template serves P and TP, with detail proportional to complexity. The selected design uses yellow activity headings and a textual block label with the corresponding block colour, subject to accessibility and Word-to-eGela testing. See [documentation ecosystem](docs/documentation-ecosystem.md) for the planned templates and implementation sequence.
+
 Internal design records can include pedagogical reasoning and mappings; student-facing instructions must be concise, clear and sufficient to complete the task. Q should be designed around conceptual understanding of the theory. TP and P should make the transition from operating tools to making pedagogical decisions visible. Where relevant, tasks ask students to explain the value or limitations of a tool and compare it to alternatives rather than merely demonstrate its operation.
 
 **Submission deadlines.** Some exercises are due by the end of the session; others have a maximum deadline of six days, normally until 23:59 on the day before the corresponding weekday in the following week. The effective deadline is specified in each exercise. Q is completed during the theoretical session. Project deadlines are specified in their briefs.
@@ -292,7 +294,7 @@ Completing an activity is not equivalent to demonstrating learning. Assessment s
 
 ### 9.2. Continuous assessment: weighting
 
-The course retains the 2025–2026 assessment model as the teacher's decision for the 2026–2027 edition.
+The course retains the 2025–2026 assessment distribution as the teacher's decision for the 2026–2027 edition. P and TP use the distinct scoring conventions specified in section 9.4.
 
 | Component | Weight | Distribution |
 |---|---:|---|
@@ -323,17 +325,25 @@ Attendance, justified absences, remediation and eligibility requirements must be
 
 To pass the examination, students must both achieve at least 66% correct answers in the theoretical part and obtain an overall examination mark of at least 5/10. The examination assesses individual conceptual understanding and application. The practical part can require students to justify both technology use and the decision not to use it.
 
-**TP and P.** Exercises retain the three-level scale used in the previous edition:
+**P — practical exercises.** The responsible teacher has selected the four percentage levels used in the 2025–2026 activity template: `0`, `33`, `66` and `100`. The purpose is to distinguish intermediate work from work that fully meets the expected standard. The following general quality descriptors are working operational formulations; activity-specific success criteria make them observable.
 
-| Score | Meaning |
+| Score (%) | Working quality descriptor |
 |---:|---|
-| 0 | Not submitted or very low-quality performance. |
-| 0.5 | Submitted late or intermediate-quality performance. |
-| 1 | Submitted by the specified deadline and meeting the expected standard. |
+| 0 | No submission or no assessable evidence of the required learning. |
+| 33 | Some relevant evidence, but substantial errors or omissions relative to the success criteria. |
+| 66 | Adequate evidence of the intended learning, with identifiable limitations or aspects needing improvement. |
+| 100 | The work fully meets the communicated success criteria and expected standard. |
 
-P exercises contribute to the grade of their respective block; TP exercises do not directly contribute to the numerical grade. Deadlines are activity-specific (end of session or up to six days). The detailed aggregation rule, treatment of justified late submissions and remediation procedure should be communicated consistently. The scale combines punctuality and quality; feedback should distinguish these where useful.
+**TP — theoretical-practical exercises.** Use a binary completion scale: `0` or `100`. A TP is a required learning activity without direct numerical weighting in the final course grade. The following working descriptors distinguish completion from non-completion; the minimum evidence required is made explicit in the instructions.
 
-**Q.** Questionnaires are a new instrument for checking understanding of theoretical content during lectures, identifying misconceptions and informing teaching and examination preparation. No separate summative weighting is introduced, thereby preserving the agreed assessment distribution. The precise format, scoring or completion record, make-up arrangements and any relationship to TP or progression requirements are to be agreed before being used as assessment conditions. A Q result must not automatically be treated as a P or TP grade.
+| Completion score (%) | Working descriptor |
+|---:|---|
+| 0 | Not completed: no submission or required minimum evidence not demonstrated. |
+| 100 | Completed: the required minimum evidence of the activity has been demonstrated. |
+
+P exercises contribute to the grade of their respective block; TP records track completion and do not directly contribute to the numerical grade. Deadlines remain activity-specific (end of session or up to six days). Distinguish learning quality, completion and punctuality in the evidence and feedback. The historical four-level template combined punctuality and quality; the teacher has selected its four numerical levels, not reinstated the overlapping historical descriptors. The precise effect of late work (including justified late submissions), P aggregation, TP completion thresholds and remediation/progression procedures remain subject to review and must be communicated consistently within institutional requirements before application. No new late penalty or progression threshold is established here.
+
+**Q.** Questionnaires are a new instrument for checking understanding at the end of selected theoretical sessions, encouraging attention and attendance, identifying misconceptions and informing teaching and examination preparation. They may be delivered through Wooclap or eGela questionnaires. Their use every week is not a fixed requirement. No separate summative weighting is introduced, thereby preserving the agreed assessment distribution. The precise format, scoring or completion record, make-up arrangements and any relationship to TP or progression requirements are to be agreed before being used as assessment conditions. A Q result must not automatically be treated as a P or TP grade.
 
 **Prj.** Each project is assessed through a specific rubric linked to its evidence and relevant learning aims. The working numerical convention is five performance levels, scored 0–4, based on the explicit scale in the 2025–2026 document. The mean of equally weighted rubric criteria, where that design applies, is converted to a 0–100 scale (`mean / 4 × 100`). Specific descriptors and any criterion weights must be defined in each rubric. This convention resolves the historical inconsistency between the heading “1–5” and the description “0–4”; it is recorded for final review in section 18. Grouping and evidence of individual contributions are specified in project briefs.
 
@@ -369,7 +379,7 @@ Feedback should help students recognize what their work demonstrates, identify w
 
 Direct correction is appropriate when a technical or conceptual error prevents further learning. Hints, questions and alternative examples are useful when the student should discover or justify a solution independently. Particular attention should be paid to the distinction between successful tool operation and sound pedagogical reasoning. Q responses can inform collective clarification of misconceptions; no individualized written feedback is assumed for every questionnaire. Peer and self-assessment may be incorporated where they support reflection and revision.
 
-AI-mediated feedback is a possible development, not an established practice for this edition. Any pilot should identify suitable activities, define criteria and evidence available to the system, protect personal data, specify teacher review and evaluate whether the feedback is useful and manageable. AI must not invent observations, introduce undisclosed criteria or issue official grades. No automated feedback workflow is adopted at this stage.
+AI-mediated feedback and assessment support are possible developments, not established practices for this edition. The two-layer activity specification provides a basis for criterion-referenced review of evidence and for student-facing formative assistants. Possible pilots include a teacher-facing assistant that identifies evidence against published criteria and drafts feedback for teacher review, or a student-facing assistant used before submission to identify potential errors, ask guiding questions and support revision without completing the task for the student. A selected activity may eventually require such a formative interaction if its purpose, access arrangements, evidence, permitted assistance and alternatives are explicitly defined and approved beforehand. Any pilot should protect personal data, specify teacher review and evaluate accuracy, usefulness, fairness and workload. AI must distinguish observed evidence from inference, flag uncertainty, avoid invented observations or undisclosed criteria, and never issue official grades or make binding progression decisions. No automated grading, mandatory assistant use or feedback workflow is adopted at this stage.
 
 ## 11. Quality Criteria for Student Work
 
@@ -388,7 +398,7 @@ The quality of student work is evaluated in relation to its purpose, intended le
 | Communication | Clarity, organization and suitability for the intended audience. |
 | Authorship and collaboration | Responsibility for one's own work and meaningful contribution to collective work. |
 
-A sophisticated or visually appealing digital product is insufficient evidence if the student cannot understand and explain the decisions behind it. Conversely, a simple or non-digital solution may demonstrate excellent pedagogical judgement where it is justified and compatible with the task's intended learning. Technical requirements remain relevant when the task explicitly assesses technical competence. Specific criteria are communicated in activity instructions or rubrics before assessable work is undertaken.
+A sophisticated or visually appealing digital product is insufficient evidence if the student cannot understand and explain the decisions behind it. Conversely, a simple or non-digital solution may demonstrate excellent pedagogical judgement where it is justified and compatible with the task's intended learning. Technical requirements remain relevant when the task explicitly assesses technical competence. Specific criteria are communicated in activity instructions or rubrics before assessable work is undertaken. For P and TP, use a small set of observable activity-specific success criteria (normally two to five where appropriate); for TP identify the minimum evidence for completion. These criteria support self-assessment, feedback and consistent teacher judgement without requiring a separate analytic rubric for every routine exercise.
 
 ## 12. Roles and Responsibilities
 
@@ -419,7 +429,7 @@ Students remain responsible for checking accuracy, adapting outputs and understa
 
 ### 13.2. Transparency and acknowledgement
 
-Where AI contributes materially to assessable work, activity instructions may require a declaration of the tool, purpose, processes or sections affected, verification undertaken and decisions made by the student. The precise level of detail is proportionate to the activity and communicated in advance. Complete conversation histories are not requested by default. AI acknowledgement does not replace citation of relevant sources.
+Where AI contributes materially to assessable work, activity instructions may require a declaration of the tool, purpose, processes or sections affected, contribution and limitations, verification undertaken and decisions made by the student. Distinguish activity-level authorization (permitted, restricted, required or prohibited) from acknowledgement and critical reflection; communicate the conditions in the brief, including any phase-specific limitations. The precise level of detail is proportionate to the activity and communicated in advance. Complete conversation histories are not requested by default. AI acknowledgement does not replace citation of relevant sources.
 
 ### 13.3. Privacy, integrity and accountability
 
@@ -488,13 +498,28 @@ This PEDAGOGY.md is the central reference. Complementary documentation is adopte
 | eGela | Operational materials, submissions, feedback, grades and student communications. |
 | DAL documentation | Interdisciplinary coordination and requirements. |
 
-### 17.2. Repository development
+### 17.2. Repository development and module selection
 
-This core document is the initial repository baseline. The complementary documentation will be designed progressively. Separate documentation may be useful for content architecture, assessment and rubrics, activity inventories and reusable materials, and resource selection. Specific filenames, folder structures and responsibilities are not yet adopted. A module register will identify actual modules and their dependencies once they exist.
+The selected modular ecosystem is described in [Documentation ecosystem](docs/documentation-ecosystem.md), including module responsibilities, relationships, identifiers, maintenance and the implementation sequence. The intended co-design environment is private to the teaching team; actual GitHub visibility and access settings must be verified separately. eGela remains the operational environment for student work and communications. No identifiable student records belong in the repository, even when private.
 
-Stable content and pedagogical design should be distinguished from the edition-specific teaching route. Reusable activity briefs may be retained and improved without requiring the same exercise every year. Annual selections and week-based activity identifiers should be recorded separately when this facilitates maintenance. Internal design information and student-facing instructions may differ in detail without duplicating responsibilities unnecessarily.
+| Module | Function | Implementation status |
+|---|---|---|
+| `PEDAGOGY.md` | Central pedagogical reference | Core established; v1.2 update |
+| `README.md`, `CHANGELOG.md`, `docs/documentation-ecosystem.md` | Navigation, substantive change history and architecture | Available |
+| `content.md` and, where useful, `content/` | Stable conceptual architecture and detailed content | Selected; develop following theory-material review |
+| `ontology.md` | Concept definitions and meaningful relationships | Selected; preliminary version during the course, review at the end of the edition |
+| `activities.md`, `activities/` | Reusable activity register and briefs; permanent internal IDs | Selected; populate from reviewed activities |
+| `docs/activity-design-guidelines.md` | Internal guidance for teacher and AI design and review of P/TP | Agreed; next development phase |
+| `activities/templates/activity-template.md` | Internal activity specification with a reusable student-facing layer | Agreed; next development phase |
+| `activities/templates/activity-template.docx` | Editable student-facing representation for Word and eGela | Agreed; next development phase |
+| `projects/` | Dedicated project workspaces including guides, resources and assistants when available | Selected; project decisions remain subject to review |
+| `assessment.md`, `rubrics/` | Detailed assessment implementation and authoritative rubrics | Selected; develop with verified criteria and instruments |
+| `resources.md`, and `resources/` when justified | Verified resource catalog, pedagogical value and limitations; local assets as needed | Selected catalog; local storage conditional |
+| `editions/2026-2027/teaching-route.md` | Flexible weekly route, activity placement and annual changes | Selected location; develop with annual planning |
 
-A persistent `cases.md` or `cases/` system is explicitly not adopted. Scenarios and cases can be embedded directly in tasks or assessments. An ontology, detailed AI-policy or feedback extension, agent specifications or other modules may be developed if a concrete need justifies them. No unused optional module is automatically a missing component.
+The conceptual structure is distinct from the annual teaching route. Stable activity IDs remain distinct from the weekly identifiers communicated to students. The six resource categories are frameworks, scientific literature, institutional resources, digital tools, learning resources and AI tools. Each resource should record its pedagogical purpose and relevant conditions or limitations, not merely its availability.
+
+A persistent `cases.md` or `cases/` system is explicitly not adopted. Scenarios and cases can be embedded directly in tasks or assessments. AI policy and feedback remain in the core unless a concrete need justifies separate extensions. Project-specific assistant specifications belong with the corresponding project. The documentation architecture does not require creating empty modules or directories; planned entries do not imply existing files.
 
 ## 18. Versioning and Maintenance
 
@@ -513,6 +538,8 @@ The teachers validate substantive changes. Check implications for course materia
 | 0.2 | 2026-11-24 | Consolidated specification; removal of distributed status labels; open decisions collected in section 18. |
 | 0.3 | 2026-11-24 | Incorporated the teacher's decisions for 2026–2027; converted the entire specification to English; adopted DigCompEdu as the primary curricular content structure; introduced Q and weekly S identifiers; updated LO mapping and instructional diagram; retained assessment weights and exam format; clarified deadlines, recovery, learner experience, critical pedagogy, AI use and actual feedback practice. |
 | 1.0 | 2026-11-24 | Adopted version 0.3 as the initial repository baseline with the course teacher's approval; retained all open teaching-team and institutional review actions. |
+| 1.1 | 2026-11-24 | Local project revision: selected ecosystem, private co-design intent, permanent activity IDs, project workspaces, resource categories and Q delivery; retained assessment weights and unresolved review actions. |
+| 1.2 | 2026-11-24 | Integrated v1.1 architecture into the repository; adopted four P levels (0/33/66/100) and binary TP completion (0/100); agreed two-layer activity design, template architecture and a prospective AI-assisted review/feedback approach. |
 
 ### 18.3. Focused review and implementation actions
 
@@ -523,11 +550,12 @@ The following matters are distinct from the agreed core design. They should be a
 | New learning outcomes | Discuss LO1–LO6 and the proposed DigCompEdu alignment with Javier Portillo. Review outcome coverage and evidence before adopting definitive mappings and assessment criteria. |
 | Projects | Review Prj1–Prj3 with Javier Portillo; confirm grouping (particularly Prj1), deliverables, tools, individual contributions and any redesign. |
 | Course guide alignment | Request alignment of the language versions with the DigCompEdu content structure for the next edition; address the 30/70 and 100% final-assessment discrepancies with the selected 21/63/16 and 84/16 course models through applicable institutional procedures. The precise status of any official correction is not established by this file. |
-| Q implementation | Define questionnaire format, scoring/completion record, recovery arrangements and whether completion affects progression. No separate grade weighting has been assigned. |
-| Assessment implementation | Confirm the 0–4 five-level project rubric convention, aggregation of P grades, recovery/defence logistics, arrangements for justified absences and late work, and component pass/retention rules within institutional requirements. |
+| Q implementation | Trial occasional end-of-lecture questionnaires in Wooclap or eGela and evaluate the feasibility of weekly use. Define format, scoring/completion record, recovery arrangements and whether completion affects progression. No separate grade weighting has been assigned. |
+| Assessment implementation | Implement the selected four-level P and binary TP scales after review of operational descriptors and minimum completion evidence. Confirm the 0–4 five-level project rubric convention, aggregation of P grades, recovery/defence logistics, arrangements for justified absences and late work, and component pass/retention rules within institutional requirements. |
 | Annual schedule | Develop and adjust the S-week route, DAL periods, activity selection and dates as needed. |
-| AI-supported projects and feedback | Develop student-facing assistants as needs emerge, especially for projects; consider a separate, appropriately supervised AI-mediated feedback pilot. |
-| Repository | Determine complementary modules, their responsibilities and actual locations using this baseline. |
+| AI-supported projects, feedback and assessment support | Develop student-facing assistants as needs emerge, especially for projects; consider separate, supervised pilots for criterion-referenced teacher review and student pre-submission guidance. Any required assistant interaction needs explicit activity-level approval and suitable access, privacy and verification arrangements. |
+| Activity design | Develop internal design guidelines, the Markdown specification and Word template; pilot with a short TP, a technical P and a complex AI-related P; validate Word-to-eGela transfer before adoption and repository incorporation of the revised templates. |
+| Repository | Implement the selected ecosystem progressively. Restrict access to the teaching team as intended before adding internal operational materials; develop content.md and the preliminary ontology following the theory-material review; revisit the ontology at the end of the course. |
 
 ### 18.4. Sources and traceability
 
@@ -543,7 +571,7 @@ The following matters are distinct from the agreed core design. They should be a
 
 - The historical five-area `TPC1`–`TPC5` scheme is replaced by `TPC1`–`TPC6` following DigCompEdu; identifiers must be interpreted with their edition. AC1–AC5 remain the official competence references.
 - `Q` is introduced in 2026–2027. `P` replaces `PS` in current practical exercise identifiers; existing PS materials remain historical sources.
-- The local weekly convention is `S1`, `S2`, etc., with `S1` corresponding to academic week 16. Identifiers match the actual course week (`Q_S8` = week 8; `Q_S9` = week 9). The weekly identifier does not prescribe a permanent content sequence.
+- The local weekly convention is `S1`, `S2`, etc., with `S1` corresponding to academic week 16. Identifiers match the actual course week (`Q_S8` = week 8; `Q_S9` = week 9). The weekly identifier does not prescribe a permanent content sequence. Permanent internal `ACT-xxx` identities are maintained separately from weekly labels; their assignments and revisions are recorded in the activity register and mapped in the edition teaching route.
 - The proposed LO1–LO6 preserve the previous draft identifiers. LO3 and LO6 are refined to reflect critical comparison of alternatives and facilitation of pupils' digital competence; mappings remain subject to teaching-team review.
 
-The course-specific formulations and mappings in this file are pedagogical design decisions or proposals for the stated review, not verbatim quotations from the institutional or framework sources. This version establishes the initial repository baseline.
+The course-specific formulations and mappings in this file are pedagogical design decisions or proposals for the stated review, not verbatim quotations from the institutional or framework sources. This version integrates the selected documentation ecosystem and the teacher's updated activity design and scoring decisions.
