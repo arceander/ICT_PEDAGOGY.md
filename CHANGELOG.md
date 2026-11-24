@@ -1,5 +1,9 @@
 # Changelog — ICT PEDAGOGY.md
 
+## Activity template approval — 2026-11-24
+- Recorded teacher approval of the student-facing Word template v2.0. Upload of the original DOCX and Word-to-eGela pilot remain pending.
+- Proceed to the internal Markdown template, maintaining semantic equivalence with the approved Word brief. No change to core assessment rules.
+
 ## Documentation update — 2026-11-24
 - Added the teacher-approved activity design guidelines v0.1 for template development and pilot testing.
 - Adjusted the implementation sequence: student-facing Word template first, internal Markdown template second. No change to core pedagogical or assessment rules.
