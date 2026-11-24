@@ -509,7 +509,7 @@ The selected modular ecosystem is described in [Documentation ecosystem](docs/do
 | `content.md` and, where useful, `content/` | Stable conceptual architecture and detailed content | Selected; develop following theory-material review |
 | `ontology.md` | Concept definitions and meaningful relationships | Selected; preliminary version during the course, review at the end of the edition |
 | `activities.md`, `activities/` | Reusable activity register and briefs; permanent internal IDs | Selected; populate from reviewed activities |
-| `docs/activity-design-guidelines.md` | Internal guidance for teacher and AI design and review of P/TP | Agreed; next development phase |
+| `docs/activity-design-guidelines.md` | Internal guidance for teacher and AI design and review of P/TP | Available; v0.1 teacher-approved for pilot |
 | `activities/templates/activity-template.md` | Internal activity specification with a reusable student-facing layer | Agreed; next development phase |
 | `activities/templates/activity-template.docx` | Editable student-facing representation for Word and eGela | Agreed; next development phase |
 | `projects/` | Dedicated project workspaces including guides, resources and assistants when available | Selected; project decisions remain subject to review |
@@ -554,7 +554,7 @@ The following matters are distinct from the agreed core design. They should be a
 | Assessment implementation | Implement the selected four-level P and binary TP scales after review of operational descriptors and minimum completion evidence. Confirm the 0–4 five-level project rubric convention, aggregation of P grades, recovery/defence logistics, arrangements for justified absences and late work, and component pass/retention rules within institutional requirements. |
 | Annual schedule | Develop and adjust the S-week route, DAL periods, activity selection and dates as needed. |
 | AI-supported projects, feedback and assessment support | Develop student-facing assistants as needs emerge, especially for projects; consider separate, supervised pilots for criterion-referenced teacher review and student pre-submission guidance. Any required assistant interaction needs explicit activity-level approval and suitable access, privacy and verification arrangements. |
-| Activity design | Develop internal design guidelines, the Markdown specification and Word template; pilot with a short TP, a technical P and a complex AI-related P; validate Word-to-eGela transfer before adoption and repository incorporation of the revised templates. |
+| Activity design | Use the approved internal design guidelines to develop the Word template first and the Markdown specification second; pilot with a short TP, a technical P and a complex AI-related P; validate Word-to-eGela transfer before adoption and repository incorporation of the revised templates. |
 | Repository | Implement the selected ecosystem progressively. Restrict access to the teaching team as intended before adding internal operational materials; develop content.md and the preliminary ontology following the theory-material review; revisit the ontology at the end of the course. |
 
 ### 18.4. Sources and traceability

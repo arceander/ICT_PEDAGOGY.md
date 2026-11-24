@@ -8,6 +8,7 @@ Pedagogical documentation for **Information and Communication Technology in Prim
 
 - [PEDAGOGY.md](PEDAGOGY.md) — central course specification (v1.2): competences, learning outcomes, pedagogical principles, instructional design, content, assessment, feedback, AI use and maintenance.
 - [Documentation ecosystem](docs/documentation-ecosystem.md) — module responsibilities, activity layers and implementation sequence.
+- [Activity design guidelines](docs/activity-design-guidelines.md) — teacher-approved working guidance for P/TP design and pilot testing.
 - [Changelog](CHANGELOG.md) — substantive revisions.
 - [Focused review and implementation actions](PEDAGOGY.md#183-focused-review-and-implementation-actions) — matters requiring teaching-team discussion or institutional alignment.
 

@@ -1,7 +1,7 @@
 # Documentation ecosystem — ICT
 
 - Edition: 2026–2027
-- Version: 0.2
+- Version: 0.3
 - Status: selected architecture; implementation is progressive.
 
 [PEDAGOGY.md](../PEDAGOGY.md) is the central pedagogical reference. Institutional requirements and the official course guide retain their authority. eGela is the operational student-facing environment. Maintain repository materials in English, keep identifiable student work and grades out of GitHub, and verify private teaching-team access before adding internal operational materials.
@@ -15,7 +15,7 @@
 | `content.md`, optional `content/` | Stable conceptual structure and detailed content, independent of the annual route. |
 | `ontology.md` | Preliminary concept definitions and relationships; review at the end of the edition. |
 | `activities.md`, `activities/` | Register and specifications of reusable activities, with stable IDs and revisions. |
-| `docs/activity-design-guidelines.md` | Planned internal guidance for teachers and AI. |
+| `docs/activity-design-guidelines.md` | Teacher-approved working guidance v0.1 for teachers and AI; pilot review pending. |
 | `activities/templates/activity-template.md` | Planned internal specification template including the student-facing brief. |
 | `activities/templates/activity-template.docx` | Planned editable student-facing Word representation. |
 | `projects/` | Project briefs, guides, resource links and, when needed, assistant specifications and tests; link authoritative rubrics. |
@@ -42,9 +42,9 @@ Refer to PEDAGOGY.md §9.4 for the authoritative planning scales: P has four per
 
 ## Implementation sequence
 
-1. Draft and review `docs/activity-design-guidelines.md` (v0.1).
-2. Draft and review `activities/templates/activity-template.md` (v0.1).
-3. Develop `activities/templates/activity-template.docx` (v2.0).
+1. Draft and review `docs/activity-design-guidelines.md` (v0.1) — teacher-approved and incorporated.
+2. Develop `activities/templates/activity-template.docx` (v2.0) — student-facing Word template first.
+3. Draft and review `activities/templates/activity-template.md` (v0.1) — internal specification and equivalent student-facing layer.
 4. Pilot the templates with a short TP, a technical P and a complex P involving AI; assess usability, pedagogical alignment, AI interpretation and actual Word-to-eGela transfer.
 5. Incorporate revised templates and guidelines into the repository after teacher review, then register reusable activities progressively.
 

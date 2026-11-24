@@ -1,5 +1,9 @@
 # Changelog — ICT PEDAGOGY.md
 
+## Documentation update — 2026-11-24
+- Added the teacher-approved activity design guidelines v0.1 for template development and pilot testing.
+- Adjusted the implementation sequence: student-facing Word template first, internal Markdown template second. No change to core pedagogical or assessment rules.
+
 ## 1.2 — 2026-11-24
 - Integrated the local v1.1 architecture and permanent activity identifiers into the repository.
 - Selected four P scores (0/33/66/100) to distinguish intermediate and fully satisfactory work, and binary TP completion (0/100) without direct grade weighting.
